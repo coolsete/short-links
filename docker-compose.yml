@@ -1,0 +1,6 @@
+version: '3'
+services:
+  shorter:
+    build: .
+    ports:
+      - "8087:8087"
