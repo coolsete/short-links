@@ -3,16 +3,16 @@
 Simple application for demonstrate how to work services to reduce long links.
 "Shorter" is Spring Boot application with 2 REST API and H2 in-memory database.
 
-## Build
+#Build
  >gradlew build
  
-##Build Docker container
+#Build Docker container
  >docker-compose up --build
 
-###Application port
+#Application port
 8087
 
-###Rest API
+#Rest API
 Create short link by regular url.
 > /api/short
 >
