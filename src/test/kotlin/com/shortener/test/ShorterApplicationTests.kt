@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
-@SpringBootTest(classes = [TestApplication::class])
-class TestApplicationTests {
+@SpringBootTest(classes = [ShorterApplication::class])
+class ShorterApplicationTests {
 
 	val link = "https://blog.mysite.com/another-article"
 	val wrongShortLink = "https://short.en/Pq34r"

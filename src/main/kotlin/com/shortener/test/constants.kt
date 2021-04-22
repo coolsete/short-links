@@ -15,3 +15,4 @@ val DIG_PAIR = hashMapOf(Pair('0', 0), Pair('1', 1), Pair('2', 2), Pair('3', 3),
         Pair('Y', 60), Pair('Z', 61))
 const val WRONG_DOMAIN = 123L
 const val START_ID:Int = 99999999
+const val URL = "url"

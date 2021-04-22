@@ -14,6 +14,11 @@ class LinkManager(private val shortener: ShortenerStrategy,
                   private val shortenerProperties: ShortenerProperties) {
 
     fun getShortUrl(url: String): String {
+        val links = repository.findAllByUrl(url)
+        if(links.isNotEmpty()) {
+            val link = links.first()
+            return shortenerProperties.domainName + link.short_url
+        }
         val id = idGenerator.generateId()
         return shortenerProperties.domainName + repository.save(Link(id, url, shortener.convertToLink(id))).short_url
     }
